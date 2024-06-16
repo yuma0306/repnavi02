@@ -113,7 +113,9 @@
                 @endif
                 @if($shop->pref)
                     <x-guest.dl-list term="都道府県">
-                        {{ $shop->pref }}
+                        <x-link-text02 href="/shop?pref={{ $shop->pref }}">
+                             {{ $shop->pref }}
+                        </x-link-text02>
                     </x-guest.dl-list>
                 @endif
                 @if($shop->postal_code)
