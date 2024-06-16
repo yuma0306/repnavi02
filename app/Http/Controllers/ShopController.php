@@ -18,7 +18,7 @@ class ShopController extends Controller
         $keyword = $request->input('keyword');
         if(isset($pref)) {
             $query = Shop::query();
-            $query->where('pref', 'LIKE', "%{$pref}%");
+            $query->where('pref', $pref);
             $shops = $query->get();
             return view('shop.index', compact('shops', 'pref'));
         }

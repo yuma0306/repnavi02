@@ -56,7 +56,7 @@ Route::middleware('auth')->group(function () {
  */
 Route::prefix('owner')->middleware(['auth', 'verified'])->group(function () {
     Route::get('/', [OwnerController::class, 'index'])->name('owner.index');
-    // Route::get('/pets', [OwnerController::class, 'pets'])->name('owner.pets');
+    Route::get('/pets', [OwnerController::class, 'pets'])->name('owner.pets');
     // // ショップ一覧を表示するルート
     Route::get('/shop', [OwnerShopController::class, 'index'])->name('owner.shop.index');
     // // ショップ情報登録処理へのルート

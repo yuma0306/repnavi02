@@ -54,12 +54,12 @@
                 <x-btn href="/shop/" class="col-span-2">ショップ一覧</x-btn>
             </x-guest.nav02>
             <x-guest.nav02 class="mt-5">
-                <x-guest.card02 href="/shop?pref=東京" sub="tokyo" style="background-image: url({{ asset('img/img-tokyo.jpg') }})">東京</x-guest.card02>
-                <x-guest.card02 href="/shop?pref=神奈川" sub="kanagawa" style="background-image: url({{ asset('img/img-kanagawa.jpg') }})">神奈川</x-guest.card02>
-                <x-guest.card02 href="/shop?pref=大阪" sub="osaka" style="background-image: url({{ asset('img/img-osaka.jpg') }})">大阪</x-guest.card02>
-                <x-guest.card02 href="/shop?pref=京都" sub="kyoto" style="background-image: url({{ asset('img/img-kyoto.jpg') }})">京都</x-guest.card02>
-                <x-guest.card02 href="/shop?pref=愛知" sub="aichi" style="background-image: url({{ asset('img/img-aichi.jpg') }})">愛知</x-guest.card02>
-                <x-guest.card02 href="/shop?pref=福岡" sub="fukuoka" style="background-image: url({{ asset('img/img-fukuoka.jpg') }})">福岡</x-guest.card02>
+                <x-guest.card02 href="/shop?pref=東京都" sub="tokyo" style="background-image: url({{ asset('img/img-tokyo.jpg') }})">東京</x-guest.card02>
+                <x-guest.card02 href="/shop?pref=神奈川県" sub="kanagawa" style="background-image: url({{ asset('img/img-kanagawa.jpg') }})">神奈川</x-guest.card02>
+                <x-guest.card02 href="/shop?pref=大阪府" sub="osaka" style="background-image: url({{ asset('img/img-osaka.jpg') }})">大阪</x-guest.card02>
+                <x-guest.card02 href="/shop?pref=京都府" sub="kyoto" style="background-image: url({{ asset('img/img-kyoto.jpg') }})">京都</x-guest.card02>
+                <x-guest.card02 href="/shop?pref=愛知県" sub="aichi" style="background-image: url({{ asset('img/img-aichi.jpg') }})">愛知</x-guest.card02>
+                <x-guest.card02 href="/shop?pref=福岡県" sub="fukuoka" style="background-image: url({{ asset('img/img-fukuoka.jpg') }})">福岡</x-guest.card02>
             </x-guest.nav02>
         </x-guest.inner>
         <x-footer></x-footer>

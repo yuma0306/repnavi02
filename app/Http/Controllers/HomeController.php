@@ -9,7 +9,7 @@ use App\Models\Pet;
 class HomeController extends Controller
 {
     public function index() {
-        $pets = Pet::latest()->take(5)->get();
+        $pets = Pet::latest()->take(6)->get();
         return view('home', compact('pets'));
     }
 }

@@ -56,7 +56,7 @@
                                 <x-owner.form-file>
                                     <x-slot name="img">
                                         @if($pet->{"pet_image$i"})
-                                            <img class="object-cover aspect-video rounded" src="{{ asset('storage/' . $pet->{"pet_image$i"}) }}" alt="">
+                                            <img class="block max-w-full object-cover aspect-video" src="{{ asset('storage/' . $pet->{"pet_image$i"}) }}" alt="">
                                         @endif
                                     </x-slot>
                                     <input type="file" id="pet_image{{ $i }}" name="pet_image{{ $i }}">
