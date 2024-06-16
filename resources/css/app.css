@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/**
+* Base Style
+*/
+@font-face {
+	src: url(/public/font/NotoSansJP-Regular.ttf) format('truetype');
+	font-family: "Noto Sans JP";
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	src: url(/public/font/NotoSansJP-Medium.ttf) format('truetype');
+	font-family: "Noto Sans JP";
+	font-weight: 500;
+	font-display: swap;
+}
+@font-face {
+	src: url(/public/font/NotoSansJP-Bold.ttf) format('truetype');
+	font-family: "Noto Sans JP";
+	font-weight: 700;
+	font-display: swap;
+}
+body {
+    font-family: "Noto Sans JP", sans-serif;
+	word-break: break-all;
+	overflow-wrap: break-word;
+    color: #333;
+}
