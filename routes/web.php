@@ -3,7 +3,13 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-// 追加
+// トップ
+use App\Http\Controllers\HomeController;
+// ショップ
+use App\Http\Controllers\ShopController;
+// 生体
+use App\Http\Controllers\PetController;
+// オーナー
 use App\Http\Controllers\Owner\OwnerController;
 use App\Http\Controllers\Owner\OwnerShopController;
 use App\Http\Controllers\Owner\OwnerPetController;
@@ -19,10 +25,26 @@ use App\Http\Controllers\Owner\OwnerPetController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/**
+ * トップ
+ */
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
+/**
+ * ショップ
+ */
+Route::get('/shop', [ShopController::class, 'index'])->name('shop.index');
+Route::get('/shop/{id}', [ShopController::class, 'show'])->name('shop.show');
+
+/**
+ * 生体
+ */
+Route::get('/pet', [PetController::class, 'index'])->name('pet.index');
+Route::get('/pet/{id}', [PetController::class, 'show'])->name('pet.show');
+
+/**
+ * オーナー管理画面
+ */
 Route::middleware('auth')->group(function () {
     Route::get('/owner/profile', [ProfileController::class, 'edit'])->name('owner.profile.edit');
     Route::patch('/owner/profile', [ProfileController::class, 'update'])->name('owner.profile.update');
@@ -58,6 +80,9 @@ Route::prefix('owner')->middleware(['auth', 'verified'])->group(function () {
 
 require __DIR__.'/auth.php';
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');

@@ -35,7 +35,7 @@
             <x-guest.heading-lv2>カテゴリから探す</x-guest.heading-lv2>
             <x-guest.nav02>
                 <x-guest.search class="col-span-2" action="/pet/" method="GET" placeholder="種名で検索" />
-                <x-btn href="/shop/" class="col-span-2">生体一覧</x-btn>
+                <x-btn href="/pet/" class="col-span-2">生体一覧</x-btn>
             </x-guest.nav02>
             <x-guest.nav02 class="mt-5">
                 <x-guest.card02 href="/pet?category=ニシキヘビ" sub="python" style="background-image: url({{ asset('img/img-python.jpg') }})">ニシキヘビ</x-guest.card02>

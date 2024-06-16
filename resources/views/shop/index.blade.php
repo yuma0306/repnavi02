@@ -82,5 +82,6 @@
         </x-guest.main>
         <x-footer />
     </x-guest.wrapper>
+    <script src="{{ asset('js/common.js') }}"></script>
 </x-body>
 </html>
