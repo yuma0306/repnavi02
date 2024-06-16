@@ -42,4 +42,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    // ショップテーブルへのリレーション追加
+    public function shops()
+    {
+        return $this->hasMany(Shop::class);
+    }
 }
