@@ -15,13 +15,13 @@
     <x-owner.wrapper >
         @include('layouts.navigation')
         <x-owner.heading-lv1>
-            {{ Auth::user()->name }}さんのショップ一覧
+            {{ Auth::user()->name }}さんの生体情報一覧
         </x-owner.heading-lv1>
         <x-owner.main>
             <x-owner.inner>
                 <x-breadcrumb :breads="$breads" />
                 @if($pets->isEmpty())
-                    <p>ショップはまだ登録されていません</p>
+                    <p>生体はまだ登録されていません</p>
                 @else
                     <x-owner.card-list>
                         @foreach($pets as $pet)
