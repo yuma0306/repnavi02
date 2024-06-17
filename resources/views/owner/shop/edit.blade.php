@@ -172,7 +172,7 @@
                                 type="text"
                                 name="address"
                                 id="address"
-                                value="{{ $shop->new_address }}"
+                                value="{{ $shop->address }}"
                             />
                         </x-owner.form-group>
                         <x-owner.form-group>
@@ -186,7 +186,7 @@
                                 type="text"
                                 name="postal_code"
                                 id="postal_code"
-                                value="{{ $shop->new_postal_code }}"
+                                value="{{ $shop->postal_code }}"
                             />
                         </x-owner.form-group>
                         <x-owner.form-group>
