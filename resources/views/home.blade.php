@@ -11,7 +11,7 @@
                 <div class="bg-white w-full lg:w-fit rounded-lg mt-[-30px]">
                     <div class="container mx-auto px-4 pt-10">
                         <h1 class="font-bold text-4xl sm:text-5xl text-center">レプナビ</h1>
-                        <p class="mt-8">ペットショップを回って理想の生体を見つけるのは大変です。<br>レプナビなら欲しい生体をすぐに検索して見つけることができます。</p>
+                        <p class="mt-8">爬虫類を購入したいユーザーとショップをマッチングするデモサイトです。<br>レプナビなら欲しい生体をすぐに検索して見つけることができます。</p>
                         <x-guest.search class="mt-8" action="/pet/" method="GET" placeholder="種名で検索" />
                     </div>
                 </div>
