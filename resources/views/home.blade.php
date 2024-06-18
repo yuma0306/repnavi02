@@ -12,7 +12,7 @@
                     <div class="container mx-auto px-4 pt-10">
                         <h1 class="font-bold text-4xl sm:text-5xl text-center">レプナビ</h1>
                         <p class="mt-8">爬虫類を購入したいユーザーとショップをマッチングするデモサイトです。<br>レプナビなら欲しい生体をすぐに検索して見つけることができます。</p>
-                        <x-guest.search class="mt-8" action="/pet/" method="GET" placeholder="種名で検索" />
+                        <x-guest.search class="mt-8" action="/pet/" method="GET" />
                     </div>
                 </div>
                 <div class="overflow-hidden rounded shadow-lg flex-1">
@@ -34,7 +34,7 @@
             @endisset
             <x-guest.heading-lv2>カテゴリから探す</x-guest.heading-lv2>
             <x-guest.nav02>
-                <x-guest.search class="col-span-2" action="/pet/" method="GET" placeholder="種名で検索" />
+                <x-guest.search class="col-span-2" action="/pet/" method="GET" />
                 <x-btn href="/pet/" class="col-span-2">生体一覧</x-btn>
             </x-guest.nav02>
             <x-guest.nav02 class="mt-5">
@@ -50,7 +50,7 @@
             </x-guest.nav02>
             <x-guest.heading-lv2>ショップを探す</x-guest.heading-lv2>
             <x-guest.nav02>
-                <x-guest.search class="col-span-2" action="/shop/" method="GET" placeholder="ショップ名で検索" />
+                <x-guest.search class="col-span-2" action="/shop/" method="GET" />
                 <x-btn href="/shop/" class="col-span-2">ショップ一覧</x-btn>
             </x-guest.nav02>
             <x-guest.nav02 class="mt-5">
