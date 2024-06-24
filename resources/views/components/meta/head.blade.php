@@ -18,11 +18,9 @@
 	<meta property="og:description" content="{{ $desc }}レプナビは爬虫類と飼育者を繋ぐマッチングサービスです。">
 	<meta property="og:url" content="{{ url()->current() }}">
 	<meta property="og:image" content="{{ asset('img/ogp.png') }}">
-	<meta property="og:site_name" content="ヘビ牧場どらんごファーム">
+	<meta property="og:site_name" content="レプナビ">
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="ja_JP">
-    {{--  <link rel="preconnect" href="https://fonts.bunny.net">  --}}
-    {{--  <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet">  --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     {{ $slot }}
 </head>
